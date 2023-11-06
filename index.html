@@ -18,6 +18,23 @@
 </head>
 
 <body>
+  <div class="modal" id="exampleModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">LAUNCHING SOON</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Join our waiting community on telegram</p>
+          <a class="nav-link join-button" blank="_" href="https://t.me/tradegrowapp"><span class="text-black">Join now</span></a>
+
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg">
     <div class="container">
@@ -679,7 +696,7 @@
       wow = new WOW();
       wow.init();
       $(document).ready(function (e) {
-
+        $('#exampleModal').modal('show');
         $('#video-icon').on('click', function (e) {
           e.preventDefault();
           $('.video-popup').css('display', 'flex');
@@ -711,7 +728,7 @@
           navbar.addClass("nav-scroll");
 
         } else {
-        $('.navbar-logo img').attr('src', 'images/logo.png');
+          $('.navbar-logo img').attr('src', 'images/logo.png');
           navbar.addClass("nav-scroll");
         }
 
