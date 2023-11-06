@@ -10,15 +10,31 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
         integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
         integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <!-- Font Google -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Inter:wght@900&family=Poppins:wght@900&family=Roboto:wght@300&display=swap"
+    rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google" content="notranslate">
 
     <style>
+        body {
+
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Inter', sans-serif;
+
+        }
+
         .bg-section {
             height: 100vh;
             background-image: url('images/background.png');
@@ -36,12 +52,16 @@
             border: none !important;
             border-radius: 50px !important;
         }
+        ul li a{
+            text-decoration: none;
+            color: black !important;
+        }
     </style>
 </head>
 
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg sticky top-0">
         <div class="container">
             <a class="navbar-brand navbar-logo" href="#">
                 <img src="images/logo.png" alt="logo" class="logo-1">
@@ -54,24 +74,27 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-black" href="/index.html" >Home</a>
+                        <a class="nav-link" href="#" data-scroll-nav="0" data-toggle="collapse"
+                            data-target=".navbar-collapse">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-scroll-nav="1" data-toggle="collapse"
-                            data-target=".navbar-collapse">Our
-                            Services</a>
+                            data-target=".navbar-collapse">Why
+                            Tradegrow</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" data-scroll-nav="2" data-toggle="collapse"
-                            data-target=".navbar-collapse">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-scroll-nav="3" data-toggle="collapse"
-                            data-target=".navbar-collapse">About
-                            Us</a>
+                        <a class="nav-link" href="#" data-scroll-nav="1" data-toggle="collapse"
+                            data-target=".navbar-collapse">How
+                            it works</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./partnership.html">Partnership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Event</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link getStarted-button" href="/signup.html">Get Started</a>
