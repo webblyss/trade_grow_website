@@ -34,6 +34,7 @@ h6 {
   position: fixed;
   right: 0;
   left: 0;
+  top: 0;
   width: 100%;
   padding-left: 0;
   padding-right: 0;
@@ -126,7 +127,7 @@ h6 {
   background-position: 600px 0px;
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 100px 0px;
+  padding: 50px 0px;
   position: relative;
 }
 .banner::before {
